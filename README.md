@@ -1,5 +1,15 @@
 # MKT
-Original source code taken from https://forums.mydigitallife.net/threads/microsoft-toolkit-continued.82782/
+Official thread page https://forums.mydigitallife.net/threads/microsoft-toolkit-continued.82782/
+
+# Microsoft Toolkit v2.7.2
+
+- Official KMS Solution for Microsoft Products by @CODYQX4
+- This is a set of tools and functions for managing licensing, deploying, and activating Microsoft Office and Windows.
+- All output from these functions is displayed in the Information Console.
+- All functions are run in the background and the GUI is disabled to prevent running multiple functions, as they could conflict or cause damage if run concurrently.
+- Office Setup Customization Functions (Customize Setup Tab), AutoKMS Uninstaller (if AutoKMS is installed), AutoRearm Uninstaller (if AutoRearm is installed), Office Uninstaller and Product Key Checker work even if Microsoft Office or Windows is not installed/supported.
+- For information about individual functions, see the program Readme.
+- Activation Instructions & other Tutorials by @Razorsharp1
 
 ## Requirements:
 
