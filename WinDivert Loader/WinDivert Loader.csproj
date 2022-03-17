@@ -49,7 +49,7 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-  <!--
+    <!--
     <Reference Include="JetBrains.Annotations, Version=10.2.1.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>..\packages\TaskScheduler.2.5.22\lib\net40\JetBrains.Annotations.dll</HintPath>
       <Private>True</Private>
@@ -101,6 +101,9 @@
   -->
   <UsingTask TaskName="SmartAssembly.MSBuild.Tasks.Build" AssemblyName="SmartAssembly.MSBuild.Tasks, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7f465a1c156d4d57" />
   <Target Name="AfterBuild">
-    <SmartAssembly.MSBuild.Tasks.Build ProjectFile=".\WinDivert Loader.saproj" />
+    <!-- <SmartAssembly.MSBuild.Tasks.Build ProjectFile=".\WinDivert Loader.saproj" /> -->
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)Activation\Resources\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
