@@ -168,4 +168,7 @@
   <Target Name="AfterBuild">
     <!-- <SmartAssembly.MSBuild.Tasks.Build ProjectFile=".\AutoKMS.saproj" /> -->
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)Microsoft Toolkit\Resources\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
